@@ -1,0 +1,10 @@
+apiVersion: v1 
+kind: ConfigMap
+metadata:
+  name: mysql-dbcreation-script
+data:
+  mysql_usermgmt.sql: |
+    DROP DATABASE IF EXISTS online_shopping_db;
+    CREATE DATABASE online_shopping_db;
+
+#this config map you can compare the same as user data. 
